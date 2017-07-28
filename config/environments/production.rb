@@ -1,6 +1,9 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  # This is how one would configure production for Heroku
+  # ENV["REDISTOGO_URL"] = 'redis://redistogo:yourinfohere@something.redistogo.com:1234/'
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 

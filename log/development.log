@@ -1680,3 +1680,9 @@ Processing by ResponsesController#index as HTML
 Completed 200 OK in 36ms (Views: 32.4ms | ActiveRecord: 0.8ms)
 
 
+[ActiveJob] Enqueued SendSurveyJob (Job ID: 0ba2974f-44ac-49da-93db-7f25eb6829e4) to Async(default) at 2017-07-28 21:21:12 UTC
+[ActiveJob] [SendSurveyJob] [0ba2974f-44ac-49da-93db-7f25eb6829e4] Performing SendSurveyJob (Job ID: 0ba2974f-44ac-49da-93db-7f25eb6829e4) from Async(default)
+[ActiveJob] [SendSurveyJob] [0ba2974f-44ac-49da-93db-7f25eb6829e4] Performed SendSurveyJob (Job ID: 0ba2974f-44ac-49da-93db-7f25eb6829e4) from Async(default) in 28.41ms
+[ActiveJob] Enqueued SendSurveyJob (Job ID: dfade40f-0bb4-450d-ba66-71fd1b841219) to Async(default) at 2017-07-28 21:22:47 UTC
+[ActiveJob] [SendSurveyJob] [dfade40f-0bb4-450d-ba66-71fd1b841219] Performing SendSurveyJob (Job ID: dfade40f-0bb4-450d-ba66-71fd1b841219) from Async(default)
+[ActiveJob] [SendSurveyJob] [dfade40f-0bb4-450d-ba66-71fd1b841219] Performed SendSurveyJob (Job ID: dfade40f-0bb4-450d-ba66-71fd1b841219) from Async(default) in 19.06ms
