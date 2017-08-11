@@ -1,11 +1,13 @@
 require 'resque/tasks'
 
 namespace :resque do
-  task :setup do
+  task :setup => :environment do
     require 'resque'
-    ENV['QUEUE'] = '*'
+    ENV['QUEUE'] ||= '*'
 
     Resque.redis = 'localhost:6379' unless Rails.env == 'production'
+    Resque.logger.formatter = Resque::VerboseFormatter.new
+    Resque.logger.level = Logger::DEBUG
   end
 end
 

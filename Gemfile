@@ -33,6 +33,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'twilio-ruby'
 gem 'redis'
 gem 'resque', require: 'resque/server'
+gem 'pry'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
