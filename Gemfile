@@ -33,6 +33,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'twilio-ruby'
 gem 'redis'
 gem 'resque', require: 'resque/server'
+gem 'resque-scheduler'
 gem 'pry'
 
 # Use Capistrano for deployment

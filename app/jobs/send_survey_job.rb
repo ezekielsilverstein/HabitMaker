@@ -1,13 +1,16 @@
 class SendSurveyJob
   @queue = :default
 
-  def self.perform(*args)
+  def self.perform(id)
     # Do something later
     # `echo #{Time.now} >> abc.txt`
-    sms_handler = SMSHandler.new("+13109632942")
-    # puts 'hello'
-    sms_handler.send_message("Another test message")
-    # puts 'goodbye'
+    survey = Survey.find(id)
+    to_number = survey.phone_number
+    survey_name = survey.name
+
+    sms_handler = SMSHandler.new(to_number)
+    sms_handler.send_message(survey_name)
 
   end
 end
+
