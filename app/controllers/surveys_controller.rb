@@ -1,5 +1,6 @@
 class SurveysController < ApplicationController
   before_action :set_survey, only: [:show, :edit, :update, :destroy]
+  before_action :set_timezone
 
   # GET /surveys
   # GET /surveys.json
@@ -70,5 +71,10 @@ class SurveysController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def survey_params
       params.fetch(:survey, {}).permit([:name, :question_text])
+    end
+
+    # Set the timezone to EST
+    def set_timezone
+      Time.zone = "Eastern Time (US & Canada)"
     end
 end
